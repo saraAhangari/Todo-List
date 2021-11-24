@@ -101,7 +101,7 @@ namespace ToDoList
         }
         public void delToDo(ToDo[] t, int NumberOfTasks, int task_number)
         {
-            /*ToDo a = new ToDo[NumberOfTasks - 1];
+            ToDo[] a = new ToDo[100];
             for (int i = 0; i < task_number; i++)
             {
                 a[i] = t[i];
@@ -114,7 +114,7 @@ namespace ToDoList
             for (int i = 0; i < NumberOfTasks; i++)
             {
                 t[i] = a[i];
-            }*/
+            }
             Console.WriteLine("Task Deleted !");
             ShowList(t, NumberOfTasks);
         }
