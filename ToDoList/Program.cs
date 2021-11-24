@@ -118,6 +118,33 @@ namespace ToDoList
             Console.WriteLine("Task Deleted !");
             ShowList(t, NumberOfTasks);
         }
+
+        public void ShowOneTask(ToDo[] t, int NumberOfTasks, int task_number)
+        {
+            Console.WriteLine("Title " + task_number + " :");
+            Console.WriteLine("Describtion " + task_number + " :");
+            Console.WriteLine("Priority " + " :");
+            Console.WriteLine("Deadline :");
+            char CHOICE;
+            Console.WriteLine("Enter your choice...");
+            Console.WriteLine("B. Back To Main Menu");
+            Console.WriteLine("D. Delete The Task");
+            CHOICE = Console.ReadKey().KeyChar;
+            switch (CHOICE)
+            {
+                case 'B':
+                    {
+                        menu();
+                        break;
+                    }
+                case 'D':
+                    {
+                        delToDo(t, NumberOfTasks, task_number - 1);
+                    }
+                    break;
+            }
+        }
+
         static void Main()
         {
             int choice, task_number, NumberOfTasks = 0;
