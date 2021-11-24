@@ -99,6 +99,25 @@ namespace ToDoList
             NumberOfTasks++;
             menu();
         }
+        public void delToDo(ToDo[] t, int NumberOfTasks, int task_number)
+        {
+            /*ToDo a = new ToDo[NumberOfTasks - 1];
+            for (int i = 0; i < task_number; i++)
+            {
+                a[i] = t[i];
+            }
+            for (int i = task_number; i < NumberOfTasks - 1; i++)
+            {
+                a[i] = t[i + 1];
+            }
+            NumberOfTasks--;
+            for (int i = 0; i < NumberOfTasks; i++)
+            {
+                t[i] = a[i];
+            }*/
+            Console.WriteLine("Task Deleted !");
+            ShowList(t, NumberOfTasks);
+        }
         static void Main()
         {
             int choice, task_number, NumberOfTasks = 0;
