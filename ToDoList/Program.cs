@@ -121,7 +121,6 @@ namespace ToDoList
 
         public void ShowOneTask(ToDo[] t, int NumberOfTasks, int task_number)
         {
-            Console.WriteLine("Title " + task_number + " :");
             Console.WriteLine("Describtion " + task_number + " :");
             Console.WriteLine("Priority " + " :");
             Console.WriteLine("Deadline :");
